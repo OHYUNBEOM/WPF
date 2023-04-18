@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wpf01_startApp", "wpf01_startApp\wpf01_startApp.csproj", "{811853F1-20E1-4BF5-B65F-78D012D0158F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wpf02_simplecontrols", "wpf02_simplecontrols\wpf02_simplecontrols.csproj", "{B999E19F-6BEA-498D-9CF2-0F683DC41F2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{811853F1-20E1-4BF5-B65F-78D012D0158F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{811853F1-20E1-4BF5-B65F-78D012D0158F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{811853F1-20E1-4BF5-B65F-78D012D0158F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{811853F1-20E1-4BF5-B65F-78D012D0158F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B999E19F-6BEA-498D-9CF2-0F683DC41F2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B999E19F-6BEA-498D-9CF2-0F683DC41F2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B999E19F-6BEA-498D-9CF2-0F683DC41F2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B999E19F-6BEA-498D-9CF2-0F683DC41F2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5011C29F-7808-4DAA-BEC7-A05A9639C790}
+	EndGlobalSection
+EndGlobal
