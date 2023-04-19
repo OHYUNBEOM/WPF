@@ -1,0 +1,41 @@
+﻿<Page x:Class="wp05_bikeShop.SupportPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:wp05_bikeShop"
+      xmlns:logics="clr-namespace:wp05_bikeShop.Logics"
+      mc:Ignorable="d" 
+      d:DesignHeight="480" d:DesignWidth="760"
+      Title="보증 페이지" Loaded="Page_Loaded">
+
+    <Grid Background="Azure">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="130"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        
+        <!--<Label>
+            -->
+        <!--사용자가 만든 클래스는 반드시 재컴파일 이후에 사용(필수)-->
+        <!--
+            <logics:Car x:Name="SJCar" Names="아이오닉" Speed="230" Colors="WhiteSmoke"/>
+        </Label>-->
+
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Content=" · 보증서 작성" FontSize="20" FontWeight="Bold" Margin="10,20,30,5"/>
+        <Button Grid.Row="2" Grid.Column="1" Content="전송" FontSize="16" Margin="10,10,20,10"/>
+
+        <TextBox x:Name="TxtSample" Grid.Row="2" Grid.Column="0" Margin= "10" FontSize="14" Text="자동차"/>
+
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            <Slider x:Name="SldValue" Maximum="100" Value="0"/><!--아래 행 데이터 바인딩 통해서 progressbar의 데이터값 받아옴-->
+            <ProgressBar x:Name="PgbValue" Height="30" Maximum="100" Value="{Binding Value,ElementName=SldValue}"/>
+            <Label x:Name="LblValue" Content="{Binding Value,ElementName=SldValue}" FontSize="20" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Page>
