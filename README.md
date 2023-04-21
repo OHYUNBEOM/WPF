@@ -16,3 +16,11 @@
 - WPF 기초
   - 데이터바인딩 마무리
   - 디자인(템플릿,스타일,리소스,리소스 딕셔너리)
+
+## 4일차 
+- WPF 응용
+  - MahApps.Metro 디자인 적용
+  - MVVM 패턴
+  - 데이터바인딩 
+  - MVVM View
+    - <img src="https://raw.githubusercontent.com/OHYUNBEOM/WPF/main/images/mahapp1.png" width=700 />
