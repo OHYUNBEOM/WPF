@@ -24,3 +24,16 @@
   - 데이터바인딩 
   - MVVM View
     - <img src="https://raw.githubusercontent.com/OHYUNBEOM/WPF/main/images/mahapp1.png" width=700 />
+## 5일차 
+- WPF 응용
+  - MVVM 패턴
+  - MVVM framework / Caliburn
+  - 데이터바인딩 DB연동
+## 6일차
+- WPF 응용
+  - 영화검색앱
+    - TMDB OpenAPI
+    - MahApps.Metro
+    - MahApps.Metro.IconPacks
+    - Newtonsoft.JSON
+    - <img src="https://raw.githubusercontent.com/OHYUNBEOM/WPF/main/images/MovieApp0425.png" width=700 />
