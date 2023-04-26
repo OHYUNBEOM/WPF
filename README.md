@@ -37,3 +37,10 @@
     - MahApps.Metro.IconPacks
     - Newtonsoft.JSON
     - <img src="https://raw.githubusercontent.com/OHYUNBEOM/WPF/main/images/MovieApp0425.png" width=700 />
+## 7일차
+- WPF 응용
+  - 영화검색앱
+    - 화면정리 
+    - CefSharp.WPF
+    - Youtube OpenAPI
+    - DB 데이터바인딩
