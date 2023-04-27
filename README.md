@@ -44,3 +44,7 @@
     - CefSharp.WPF
     - Youtube OpenAPI
     - DB 데이터바인딩
+## 8일차
+- WPF 응용
+  - 영화검색앱
+    - DB 데이터바인딩(MYSQL)
