@@ -50,6 +50,7 @@
   - 영화검색앱 완료
     - DB 데이터바인딩(MySQL)
     - <img src="https://raw.githubusercontent.com/OHYUNBEOM/WPF/main/images/MovieFinder0427.gif" width=700 />
+    - <img src="https://raw.githubusercontent.com/OHYUNBEOM/WPF/main/images/MovieFinderDB.png" width=700 />
   - 미세먼지확인 앱 개발
     - MahApps.Metro
     - 데이터포털 OpenAPI
