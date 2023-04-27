@@ -44,6 +44,7 @@
     - CefSharp.WPF
     - Youtube OpenAPI
     - DB 데이터바인딩
+    - <img src="https://raw.githubusercontent.com/OHYUNBEOM/WPF/main/images/MovieFinder0426.gif" width=700 />
 ## 8일차
 - WPF 응용
   - 영화검색앱
