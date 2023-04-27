@@ -30,18 +30,19 @@
         <!--영화명 검색 부분-->
         <Grid Grid.Row="0" Grid.Column="0">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="3*"/>
-                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="340*"/>
+                <ColumnDefinition Width="51*"/>
+                <ColumnDefinition Width="130*"/>
             </Grid.ColumnDefinitions>
             <!--InputMethod...는 디폴트로 한글 입력 하기 위함-->
-            <TextBox x:Name="TxtMovieName" Grid.Column="0" FontSize="14" Margin="5,10"
+            <TextBox x:Name="TxtMovieName" Grid.Column="0" FontSize="14" Margin="5,10,5,10"
                      mah:TextBoxHelper.Watermark="검색할 영화명 입력"
                      mah:TextBoxHelper.UseFloatingWatermark="True"
                      mah:TextBoxHelper.ClearTextButton="True"
                      InputMethod.PreferredImeState="On"
                      InputMethod.PreferredImeConversionMode="Native"
-                     KeyDown="TxtMovieName_KeyDown"/>
-            <Button x:Name="BtnSearchMovie" Grid.Column="1" FontSize="14" Margin="5,10"
+                     KeyDown="TxtMovieName_KeyDown" Grid.ColumnSpan="2"/>
+            <Button x:Name="BtnSearchMovie" Grid.Column="2" FontSize="14" Margin="5,10,5,10"
                     Content="검색" Style="{StaticResource MahApps.Styles.Button.Square.Accent}" Click="BtnSearchMovie_Click">
                 <Button.ContentTemplate>
                     <DataTemplate>
@@ -53,7 +54,7 @@
                 </Button.ContentTemplate>
             </Button>
         </Grid>
-        
+
         <!--데이터 그리드 영역-->
         <DataGrid x:Name="GrdResult" Grid.Row="1" Grid.Column="0" Margin="5"
                   IsReadOnly="True" Style="{StaticResource MahApps.Styles.DataGrid.Azure}"
@@ -79,7 +80,7 @@
                 </DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
-        
+
         <!--포스터 영역-->
         <Grid Grid.Row="0" Grid.Column="1" Grid.RowSpan="2">
             <GroupBox Header="포스터" Margin="10"
@@ -90,7 +91,7 @@
                 <Image x:Name="ImgPoster" Source="No_Picture.png" Margin="15,5"/>
             </GroupBox>
         </Grid>
-        
+
         <!--버튼 영역-->
         <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal">
             <Button x:Name="BtnAddFavorite" Content="즐겨찾기 추가" Margin="5,20" FontSize="12"
