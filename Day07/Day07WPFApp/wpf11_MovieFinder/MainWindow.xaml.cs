@@ -12,6 +12,7 @@ using System.Text;
 using System.Web;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media.Imaging;
 using wpf11_MovieFinder.Logics;
@@ -125,6 +126,7 @@ namespace wpf11_MovieFinder
             }
             this.DataContext=movieItems;
             isFavorite = false;//즐겨찾기 아님을 명시
+            StsResult.Content = $"OpenAPI {movieItems.Count}건 조회 완료";//상태바
         }
 
         private void MetroWindow_Loaded(object sender, RoutedEventArgs e)
@@ -348,6 +350,7 @@ namespace wpf11_MovieFinder
                     if(GrdResult.SelectedItems.Count == insRes)
                     {
                         await Commons.ShowMessageAsync("저장", "DB 저장 성공");
+                        StsResult.Content = $"즐겨찾기 {insRes}건 저장 완료!";
                     }
                     else
                     {
@@ -408,6 +411,7 @@ namespace wpf11_MovieFinder
                     }
                     this.DataContext = list;
                     isFavorite = true;
+                    StsResult.Content = $"즐겨찾기 {list.Count}건 조회 완료!";
                 }
             }
             catch(Exception ex)
@@ -446,6 +450,7 @@ namespace wpf11_MovieFinder
                     if(delRes==GrdResult.SelectedItems.Count)
                     {
                         await Commons.ShowMessageAsync("삭제", "DB삭제 성공!");
+                        StsResult.Content = $"즐겨찾기 {delRes}건 삭제 완료!"; //삭제와 동시에 즐겨찾기 보기의 StsResult가 뿌려지기에 화면에 안나옴
                     }
                     else
                     {
