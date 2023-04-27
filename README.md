@@ -47,5 +47,10 @@
     - <img src="https://raw.githubusercontent.com/OHYUNBEOM/WPF/main/images/MovieFinder0426.gif" width=700 />
 ## 8일차
 - WPF 응용
-  - 영화검색앱
-    - DB 데이터바인딩(MYSQL)
+  - 영화검색앱 완료
+    - DB 데이터바인딩(MySQL)
+    - <img src="https://raw.githubusercontent.com/OHYUNBEOM/WPF/main/images/MovieFinder0427.gif" width=700 />
+  - 미세먼지확인 앱 개발
+    - MahApps.Metro
+    - 데이터포털 OpenAPI
+    - DB 데이터바인딩(MySQL)
