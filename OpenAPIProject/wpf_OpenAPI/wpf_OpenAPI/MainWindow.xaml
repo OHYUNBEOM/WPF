@@ -1,0 +1,69 @@
+﻿<mah:MetroWindow x:Class="wpf_OpenAPI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:local="clr-namespace:wpf_OpenAPI"
+        mc:Ignorable="d"
+        Title="부산 연극 정보" Height="600" Width="1600" FontFamily="NanumGothic">
+
+    <mah:MetroWindow.IconTemplate>
+        <DataTemplate>
+            <iconPacks:PackIconPixelartIcons Kind="Movie" Foreground="White" Margin="5,7,0,0"/>
+        </DataTemplate>
+    </mah:MetroWindow.IconTemplate>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="0">
+            <Label Content="Busan Play Information" FontSize="30" FontWeight="Bold" Margin="10" HorizontalAlignment="Center" FontStyle="Italic"/>
+        </Grid>
+
+        <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button x:Name="BtnPlaySearch" Content="부산 연극 조회" Margin="5" Style="{StaticResource MahApps.Styles.Button.Dialogs.Accent}" Width="130" Click="BtnPlaySearch_Click"/>
+            <Button x:Name="BtnPlayInsertDB" Content="저장" Margin="5" Style="{StaticResource MahApps.Styles.Button.Dialogs.Accent}" Width="80" Click="BtnPlayInsertDB_Click"/>
+            <TextBox Width="230"  x:Name="TxtPlayName" FontSize="15" Margin="5,10,5,20"
+                     mah:TextBoxHelper.Watermark="검색할 연극명 입력"
+                     mah:TextBoxHelper.UseFloatingWatermark="True"
+                     mah:TextBoxHelper.ClearTextButton="True"
+                     InputMethod.PreferredImeState="On"
+                     InputMethod.PreferredImeConversionMode="Native" KeyDown="TxtPlayName_KeyDown"/>
+            <Button x:Name="BtnSearchPlay" Content="검색" Margin="5" Style="{StaticResource MahApps.Styles.Button.Dialogs.Accent}" Width="60" Click="BtnSearchPlay_Click"/>
+        </StackPanel>
+
+        <!--데이터 그리드-->
+        <DataGrid Grid.Row="1" Grid.ColumnSpan="2" x:Name="GrdResult" Style="{StaticResource MahApps.Styles.DataGrid.Azure}" Margin="10,10,10,10"
+              IsReadOnly="True" ItemsSource="{Binding}" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Title}" Header="제목" FontWeight="Bold" Width="590"/>
+                <DataGridTextColumn Binding="{Binding Place_nm}" Header="시설명" FontWeight="Bold" Width="370"/>
+                <DataGridTextColumn Binding="{Binding Op_st_dt}" Header="공연시작일" FontWeight="Bold" Width="160"/>
+                <DataGridTextColumn Binding="{Binding Op_ed_dt}" Header="공연종료일" FontWeight="Bold" Width="160"/>
+                <DataGridTextColumn Binding="{Binding Pay_at}" Header="유무료 구분" FontWeight="Bold" Width="80"/>
+                <DataGridTextColumn Binding="{Binding Op_at}" Header="오픈런" FontWeight="Bold" Width="60"/>
+                <DataGridTextColumn Binding="{Binding Res_no}" Header="공연번호" FontWeight="Bold" Width="100"/>
+            </DataGrid.Columns>
+            
+        </DataGrid>
+        
+        <!--상태 바-->
+        <StatusBar Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="2" Margin="0,0,0,0">
+            <StatusBarItem Content="부산 연극 정보 조회 앱 "/>
+            <Separator Style="{StaticResource MahApps.Styles.Separator.StatusBar}"/>
+            <StatusBarItem x:Name="StsResult"/>
+        </StatusBar>
+        
+    </Grid>
+</mah:MetroWindow>

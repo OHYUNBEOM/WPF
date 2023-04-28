@@ -15,13 +15,17 @@
         </DataTemplate>
     </mah:MetroWindow.IconTemplate>
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="417*"/>
+            <ColumnDefinition Width="383*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="60"/>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="25"/>
         </Grid.RowDefinitions>
 
-        <Grid Grid.Row="0">
+        <Grid Grid.Row="0" Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="1*"/>
@@ -37,14 +41,14 @@
                           mah:TextBoxHelper.UseFloatingWatermark="True"
                           mah:TextBoxHelper.ClearTextButton="True" SelectionChanged="CboReqDate_SelectionChanged"/>
             </StackPanel>
-            
+
         </Grid>
 
-        <DataGrid Grid.Row="1" x:Name="GrdResult" Style="{StaticResource MahApps.Styles.DataGrid.Azure}" Margin="10"
+        <DataGrid Grid.Row="1" x:Name="GrdResult" Style="{StaticResource MahApps.Styles.DataGrid.Azure}" Margin="10,10,10,10"
                   IsReadOnly="True" ItemsSource="{Binding}"
-                  MouseDoubleClick="GrdResult_MouseDoubleClick"></DataGrid>
+                  MouseDoubleClick="GrdResult_MouseDoubleClick" Grid.ColumnSpan="2"></DataGrid>
 
-        <StatusBar Grid.Row="2">
+        <StatusBar Grid.Row="1" Grid.ColumnSpan="2" Margin="0,349,0,0" Grid.RowSpan="2">
             <StatusBarItem Content="김해시 미세먼지앱"/>
             <Separator Style="{StaticResource MahApps.Styles.Separator.StatusBar}"/>
             <StatusBarItem x:Name="StsResult"/>
