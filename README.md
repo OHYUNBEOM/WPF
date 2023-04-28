@@ -63,4 +63,7 @@
     - DB 데이터바인딩(MySQL)
     - <img src="https://raw.githubusercontent.com/OHYUNBEOM/WPF/main/images/DustSensor0428.gif" width=700 />
   - 개인 포트폴리오 개발
-    - 데이터 포털 OpenAPI 사용 / 기타 API 사용
+    - MahApp
+    - OpenApi(공공 데이터 포털 부산 연극 정보)
+    - MySQL
+    - <img src="https://raw.githubusercontent.com/OHYUNBEOM/WPF/main/images/OpenApiProject.gif" width=1600 /> 
