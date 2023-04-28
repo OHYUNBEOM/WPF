@@ -64,6 +64,6 @@
     - <img src="https://raw.githubusercontent.com/OHYUNBEOM/WPF/main/images/DustSensor0428.gif" width=700 />
   - 개인 포트폴리오 개발
     - MahApp
-    - OpenApi(공공 데이터 포털 부산 연극 정보)
+    - OpenApi(공공 데이터 포털 부산 연극 정보 조회 App)
     - MySQL
     - <img src="https://raw.githubusercontent.com/OHYUNBEOM/WPF/main/images/OpenApiProject.gif" width=1600 /> 
