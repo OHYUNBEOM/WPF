@@ -61,5 +61,6 @@
     - MahApps.Metro
     - 데이터포털 OpenAPI
     - DB 데이터바인딩(MySQL)
+    - <img src="https://raw.githubusercontent.com/OHYUNBEOM/WPF/main/images/DustSensor0428.gif" width=700 />
   - 개인 포트폴리오 개발
     - 데이터 포털 OpenAPI 사용 / 기타 API 사용
